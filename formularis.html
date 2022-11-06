@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formularis en HTML5</title>
+</head>
+
+<body>
+  <h1>Formularis</h1>
+
+  <form method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Formulari de sol·licitud per ser proveïdor de Fruita de Temporada</legend>
+
+      <fieldset>
+        <legend>Informació personal del representant de l'empresa proveïdora</legend>
+        <p><label>Nom <input type="text" name="nom" placeholder="Martina" required></label></p>
+
+        <p><label>Cognom(s) <input type="text" name="cognoms" placeholder="Estruch Fortuny" required></label></p>
+
+        <p><label>Telèfon <input type="tel" name="telefon" placeholder="+34 643 423 521" required></label></p>
+
+        <p>
+          <label>
+            Correu(s) electrònic(s)
+            <input type="email" name="correusElectronics" multiple size="60"
+              placeholder="nom@outlook.com, nom@gmail.com" required>
+          </label>
+        </p>
+
+        <!-- <p>
+          <label for="correuElectronic">Correu electrònic </label>
+          <input type="email" id="correuElectronic" name="correuElectronic" placeholder="nom@gmail.com" size="50"
+            required>
+        </p> -->
+      </fieldset>
+
+      <fieldset>
+        <legend>Informació de l'empresa proveïdora</legend>
+        <p>
+          <label>
+            Número d'empleats del proveïdor
+            <input type="number" name="numeroEmpleatsProveidors" min="1" max="1000" step="1" value="10" required>
+          </label>
+        </p>
+
+        <p>
+          <span>L'emprea proveïdora té més de 3 anys d'existència?</span><br>
+          <input type="radio" name="menor3Anys" id="esMajor3Anys" value="Sí" required> <label
+            for="esMajor3Anys">Sí</label><br>
+          <input type="radio" name="menor3Anys" id="esMenor3Anys" value="No" checked required> <label
+            for="esMenor3Anys">No</label><br>
+        </p>
+
+        <p>
+          <label> Enllaç al lloc web del proveïdor
+            <input type="url" required>
+          </label>
+        </p>
+
+        <p>
+          <label for="imatgesFruita">Imatges representatives de la seva fruita</label>
+          <input type="file" name="imatgesFruita" id="imatgesFruita" accept="application/pdf" multiple required>
+          <!-- <input type="file" name="imatgesFruita" id="imatgesFruita" accept=".pdf, image/*" multiple required> -->
+        </p>
+
+        <p>
+          <label for="produccioFruites">
+            Fruites que produeix <small>(tecla Ctrl per seleccionar més d'una)</small>
+          </label><br>
+          <select name="produccioFruites" id="produccioFruites" size="6" multiple required>
+            <option value="Albercoc">Albercoc</option>
+            <option value="Alvocat">Alvocat</option>
+            <option value="Caqui">Caqui</option>
+            <option value="Cirera">Cirera</option>
+            <option value="Codony">Codony</option>
+            <option value="Figa">Figa</option>
+            <option value="Kiwi">Kiwi</option>
+            <option value="Llimona">Llimona</option>
+            <option value="Maduixa">Maduixa</option>
+            <option value="Magrana">Magrana</option>
+            <option value="Mandarina">Mandarina</option>
+            <option value="Mango">Mango</option>
+            <option value="Meló">Meló</option>
+            <option value="Nispro">Nispro/Nespra/Nespla</option>
+            <option value="Pera">Pera</option>
+            <option value="Pinya">Pinya</option>
+            <option value="Plàtan">Plàtan</option>
+            <option value="Poma">Poma/Maçana/Mançana</option>
+            <option value="Préssec">Préssec</option>
+            <option value="Pruna">Pruna</option>
+            <option value="Raïm">Raïm</option>
+            <option value="Síndria">Síndria/Meló d’aigua/Meló d’Alger/Meló de moro</option>
+            <option value="Taronja">Taronja</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="comarcaSeuCentralProveïdor">Comarca on s'ubica la seu central del proveïdor</label>
+          <select name="comarcaSeuCentralProveïdor" id="comarcaSeuCentralProveïdor">
+            <optgroup label="Província de Girona">
+              <option value="Ripollès">Ripollès</option>
+              <option value="Garrotxa">Garrotxa</option>
+              <option value="Alt Empordà">Alt Empordà</option>
+              <option value="Pla de l'Estany">Pla de l'Estany</option>
+              <option value="Gironès">Gironès</option>
+              <option value="Baix Empordà" selected>Baix Empordà</option>
+              <option value="Selva">Selva</option>
+              <option value="Cerdanya">Cerdanya</option>
+            </optgroup>
+            <optgroup label="Província de Barcelona">
+              <option value="Maresme">Maresme</option>
+              <option value="Vallès Oriental">Vallès Oriental</option>
+              <option value="Vallès Occidental">Vallès Occidental</option>
+              <option value="Barcelonès">Barcelonès</option>
+              <option value="Baix Llobregat">Baix Llobregat</option>
+              <option value="Alt Penedès">Alt Penedès</option>
+              <option value="Garraf">Garraf</option>
+              <option value="Anoia">Anoia</option>
+              <option value="Bages">Bages</option>
+              <option value="Osona">Osona</option>
+              <option value="Berquedà">Berquedà</option>
+            </optgroup>
+            <optgroup label="Província de Lleida">
+              <option value="Val d'Aran">Val d'Aran</option>
+              <option value="Pallars Sobirà">Pallars Sobirà</option>
+              <option value="Alt Urgell">Alt Urgell</option>
+              <option value="Cerdanya">Cerdanya</option>
+              <option value="Pallars Jussà">Pallars Jussà</option>
+              <option value="Noguera">Noguera</option>
+              <option value="Segarra">Segarra</option>
+              <option value="Urgell">Urgell</option>
+              <option value="Pla d'Urgell">Pla d'Urgell</option>
+              <option value="Noguera">Noguera</option>
+              <option value="Segrià">Segrià</option>
+              <option value="Garrigues">Garrigues</option>
+            </optgroup>
+            <optgroup label="Província de Tarragona">
+              <option value="Conca de Barberà">Conca de Barberà</option>
+              <option value="Alt Camp">Alt Camp</option>
+              <option value="Baix Penedès">Baix Penedès</option>
+              <option value="Tarragonès">Tarragonès</option>
+              <option value="Baix Camp">Baix Camp</option>
+              <option value="Priorat">Priorat</option>
+              <option value="Ribera d'Ebre">Ribera d'Ebre</option>
+              <option value="Terra Alta">Terra Alta</option>
+              <option value="Baix Ebre">Baix Ebre</option>
+              <option value="Montsià">Montsià</option>
+            </optgroup>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Signatura de la col·laboració</legend>
+        <p><label>Dia <input type="date" name="dia" required></label></p>
+
+        <p>
+          <label>Hora <input type="time" name="hora" list="horesRecomanades" required></label>
+          <datalist id="horesRecomanades">
+            <option value="10:00">
+            <option value="11:00">
+            <option value="12:00">
+            <option value="15:30">
+            <option value="16:00">
+            <option value="16:30">
+          </datalist>
+        </p>
+
+        <p>
+          <label for="idioma">Idioma en què prefereix ser atès</label>
+          <input type="text" list="idiomesParlats" name="idioma" id="idioma" placeholder="Català" required>
+          <datalist id="idiomesParlats">
+            <option value="Anglès">
+            <option value="Català">
+            <option value="Espanyol">
+          </datalist>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Altres</legend>
+        <p>
+          <label for="comentaris">Preguntes o comentaris</label><br>
+          <textarea id="comentaris" cols="40" rows="5" maxlength="800"
+            placeholder="Quan sabré una resposta respecte al preu pactat per la poma?"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="politicaPrivacitat" required>
+          <label for="politicaPrivacitat"> Accepto la política de privacitat.</label>
+        </p>
+      </fieldset>
+
+      <input type="submit" value="Reservar">
+      <!-- <button type="submit">Reservar</button> -->
+    </fieldset>
+  </form>
+</body>
+
+</html>

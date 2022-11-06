@@ -1,0 +1,40 @@
+header {
+  background-color: lightskyblue;
+  padding: 20px;
+}
+
+main {
+  background-color: lightgoldenrodyellow;
+  padding: 50px;
+}
+
+article {
+  background-color: lightsalmon;
+  padding: 30px;
+}
+
+aside {
+  background-color: lightgreen;
+  padding: 10px;
+  width: 30%;
+  float: right;
+}
+
+section {
+  background-color: lightpink;
+  padding: 30px;
+}
+
+section:nth-child(2) {
+  background-color: rgb(187, 108, 108);
+}
+
+/* section:nth-child(3) */
+section>section:last-child {
+  background-color: rgb(117, 192, 188);
+}
+
+footer {
+  background-color: lightgray;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Taules en HTML5</title>
+  <!-- <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style> -->
+</head>
+
+<body>
+  <h1>Taules</h1>
+
+  <table>
+    <caption>Logística i emmagatzematge de la fruita</caption>
+    <tr>
+      <th>Fruita</th>
+      <th>Unitats en estoc</th>
+      <th>Pes (g aprox.)</th>
+    </tr>
+    <tr>
+      <td>Caqui</td>
+      <td>134</td>
+      <td>360g</td>
+    </tr>
+    <tr>
+      <td>Síndria</td>
+      <td>56</td>
+      <td>4500g</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pes total (kg aprox.)</td>
+      <td>300,24 kg</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table>
+    <caption>Estalvi mensual</caption>
+    <colgroup>
+      <col span="2" style="background-color:rgb(211, 234, 207);">
+      <col style="background-color:rgb(241, 202, 186);">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Mes</th>
+        <th>Estalvi (€)</th>
+        <th>Notes addicionals</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gener</td>
+        <td>180€</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Febrer</td>
+        <td>220€</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Març</td>
+        <td>200€</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Abril</td>
+        <td>300€</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Maig</td>
+        <td>-200€</td>
+        <td>Despesa extraordiària per la reparació del tractor.</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>700€</td>
+        <td>-</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+
+</html>

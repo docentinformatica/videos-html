@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Llistes en HTML5</title>
+</head>
+
+<body>
+
+  <h1>Llistes: descriptives, sense ordenar, ordenades</h1>
+
+  <header>
+    <h2>Fruita de temporada a Catalunya (llista de descripció o descriptiva)</h2>
+  </header>
+  <dl>
+    <dt>Albercoc</dt>
+    <dd>De maig a agost</dd>
+    <dt>Alvocat</dt>
+    <dd>De maig a desembre</dd>
+    <dt>Caqui</dt>
+    <dd>D'octubre a desembre</dd>
+    <dt>Cirera</dt>
+    <dd>D'abril a setembre</dd>
+    <dt>Codony</dt>
+    <dd>D'octubre a març</dd>
+    <dt>Figa</dt>
+    <dd>De juliol a setembre</dd>
+    <dt>Kiwi</dt>
+    <dd>D'octubre a març</dd>
+    <dt>Llimona</dt>
+    <dd>De novembre a maig</dd>
+    <dt>Maduixa</dt>
+    <dd>De febrer a maig</dd>
+    <dt>Magrana</dt>
+    <dd>De setembre a novembre</dd>
+    <dt>Mandarina</dt>
+    <dd>D'octubre a abril</dd>
+    <dt>Mango</dt>
+    <dd>De juny a novembre</dd>
+    <dt>Meló</dt>
+    <dd>De maig a octubre</dd>
+    <dt>Nispro/Nespra/Nespla</dt>
+    <dd>D'abril a maig</dd>
+    <dt>Pera</dt>
+    <dd>De juny a desembre</dd>
+    <dt>Pinya</dt>
+    <dd>De novembre a febrer</dd>
+    <dt>Plàtan</dt>
+    <dd>Durant tot l'any</dd>
+    <dt>Poma/Maçana/Mançana</dt>
+    <dd>Durant tot l'any</dd>
+    <dt>Préssec</dt>
+    <dd>De maig a setembre</dd>
+    <dt>Pruna</dt>
+    <dd>De juny a agost</dd>
+    <dt>Raïm</dt>
+    <dd>De setembre a desembre</dd>
+    <dt>Síndria</dt>
+    <dd>De juny a agost</dd>
+    <dt>Taronja</dt>
+    <dd>De novembre a abril</dd>
+  </dl>
+
+
+  <header>
+    <h2>Listat de fruita (llista sense ordenar)</h2>
+  </header>
+  <ul>
+    <li>Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ul>
+
+
+  <header>
+    <h2>Listat de fruita (llista ordenada)</h2>
+  </header>
+  <ol>
+    <li>Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ol>
+
+  
+  <header>
+    <h2>Listat de fruita (llista ordenada amb marcador de números romans)</h2>
+  </header>
+  <!-- 
+    Atribut type:
+      a for lowercase letters
+      A for uppercase letters
+      i for lowercase Roman numerals
+      I for uppercase Roman numerals
+      1 for numbers (default)
+  -->
+  <ol type="I">
+    <li>Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ol>
+
+
+  <header>
+    <h2>Listat de fruita (llista ordenada amb valor d'inici 50)</h2>
+  </header>
+  <!-- El valor de l'atribut start és sempre numèric encara que el valor de l'atribut type estableixi una numeració per lletres o números romans -->
+  <ol start="50">
+    <li>Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ol>
+  <!-- L'atribut value per l'element li només aplica quan forma part de l'element ol -->
+  <ol>
+    <li value="50">Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ol>
+  <ol type="i" start="50">
+    <li>Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ol>
+  <ol type="i">
+    <li value="50">Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ol>
+
+
+  <header>
+    <h2>Listat de fruita (llista ordenada amb numeració inversa o descendent)</h2>
+  </header>
+  <ol reversed>
+    <li>Albercoc</li>
+    <li>Alvocat</li>
+    <li>Caqui</li>
+    <li>Cirera</li>
+    <li>Codony</li>
+    <li>Figa</li>
+  </ol>
+
+</body>
+
+</html>

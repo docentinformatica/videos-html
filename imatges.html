@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Imatges en HTML5</title>
+</head>
+
+<body>
+  <h1>Imatges</h1>
+
+  <img src="imatges/peres.jpeg" alt="Peres"><br>
+
+  <img src="imatges/peres.jpeg" alt="Peres" width="170" height="260"><br>
+
+  <figure>
+    <figcaption>3 peres</figcaption>
+    <img src="imatges/peres.jpeg" alt="Peres" width="170" height="260">
+  </figure>
+
+  <br>
+
+  <picture>
+    <source media="(max-width:600px)" srcset="imatges/bananes4.jpeg" width="343" height="225">
+    <source media="(max-width:800px)" srcset="imatges/bananes3.jpeg" width="250" height="375">
+    <source media="(max-width:1000px)" srcset="imatges/bananes2.jpeg" width="449" height="300">
+    <img src="imatges/bananes.jpeg" alt="Bananes" title="Bananes" width="281" height="375">
+  </picture>
+
+  <br>
+
+  <!-- <img src="imatges/peres.jpeg" alt="Peres" usemap="#peresmap">
+  <map name="peresmap">
+    <area shape="poly" coords="0,0,300,300" alt="Pera1" href="https://www.pexels.com/photo/green-fruit-lot-2095571/">
+    <area shape="circle" coords="200,300,8" alt="Pera2"
+      href="https://www.pexels.com/photo/two-oval-green-fruits-on-white-ceramic-plate-2067412/">
+    <area shape="circle" coords="250,300,4" alt="Pera3"
+      href="https://www.pexels.com/photo/peaches-on-footed-bowl-over-book-917012/">     
+    <!- - <area shape="rect" coords="0,0,10,10" alt="" href="">
+      <area shape="circle" coords="20,20,5" alt="" href="">
+      <area shape="poly" coords="0,0,10,10,..." alt="" href=""> - ->
+  </map> -->
+
+</body>
+
+</html>
